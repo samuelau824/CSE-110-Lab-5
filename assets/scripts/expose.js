@@ -31,7 +31,7 @@ function init() {
     audio.play();
     if (select.value == "party-horn") {
       confetti.addConfetti();
-      confetti.clearCanvas()
+      confetti.clearCanvas();
     }
   })
 
@@ -40,7 +40,7 @@ function init() {
     if (level == 0) {
       volumeIcon.src = "assets/icons/volume-level-0.svg";
       audio.volume = 0;
-    }
+    } 
     else if (level < 33) {
       volumeIcon.src = "assets/icons/volume-level-1.svg";
       audio.volume = 0.33;
@@ -51,7 +51,7 @@ function init() {
     }
     else {
       volumeIcon.src = "assets/icons/volume-level-3.svg";
-      audio.volume = 1.0  
+      audio.volume = 1.0;  
     }
   })
 }
