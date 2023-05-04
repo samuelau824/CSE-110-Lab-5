@@ -39,20 +39,17 @@ function init() {
     var level = volume.value;
     if (level == 0) {
       volumeIcon.src = "assets/icons/volume-level-0.svg";
-      audio.volume = 0;
     } 
     else if (level < 33) {
       volumeIcon.src = "assets/icons/volume-level-1.svg";
-      audio.volume = 0.33;
     }
     else if (level < 67) {
       volumeIcon.src = "assets/icons/volume-level-2.svg";
-      audio.volume = 0.67;
     }
     else {
-      volumeIcon.src = "assets/icons/volume-level-3.svg";
-      audio.volume = 1.0;  
+      volumeIcon.src = "assets/icons/volume-level-3.svg"; 
     }
+    audio.volume = volume.value/100;
   })
 }
 
